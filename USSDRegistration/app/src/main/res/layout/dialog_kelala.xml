@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="12sp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/kebele01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kebele01"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/kebele02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kebele02"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+
+        android:id="@+id/kebele03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kebele03"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/kebele04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kebele04"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/kebele_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="your choice"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</LinearLayout>

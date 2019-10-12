@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="12sp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/kelala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kelala"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/akesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/akesta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+
+        android:id="@+id/tenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tenta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/wegdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wegdi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/wereda_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="your choice"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</LinearLayout>

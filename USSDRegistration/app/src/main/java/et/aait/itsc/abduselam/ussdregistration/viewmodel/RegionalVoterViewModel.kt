@@ -30,12 +30,12 @@ class RegionalVoterViewModel: ViewModel(){
     val insertResponse: LiveData<Response<RegionalVoter>>
         get() = _insertResponse
 
-    fun getCityVoterByPhoneNumber(phone: String) = viewModelScope.launch {
+    fun getRegionalVoterByPhoneNumber(phone: String) = viewModelScope.launch {
         _getResponse.postValue(regionalVoterRepository.getRegionalVoterByPhoneNumber(phone))
 
     }
 
-    fun insertCityVoter(regionalVoter: RegionalVoter) = viewModelScope.launch {
+    fun insertRegionalVoter(regionalVoter: RegionalVoter) = viewModelScope.launch {
         _insertResponse.postValue(regionalVoterRepository.insertRegionalVoter(regionalVoter))
     }
 }

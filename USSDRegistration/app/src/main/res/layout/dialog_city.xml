@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="12sp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/addis_ababa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addis_ababa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/dire_dawa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dire_dawa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+
+        android:id="@+id/mekele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mekele"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/Bahirdar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bahir_dar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/city_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="your choice"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</LinearLayout>

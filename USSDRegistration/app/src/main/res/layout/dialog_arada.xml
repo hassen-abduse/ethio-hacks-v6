@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="12sp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/wereda1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wereda1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/wereda2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wereda2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+
+        android:id="@+id/wereda3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wereda3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <TextView
+        android:id="@+id/wereda4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wereda4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/wereda_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="your choice"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</LinearLayout>

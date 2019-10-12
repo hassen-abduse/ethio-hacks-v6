@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">USSD Registration</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="afaan_oromoo"> 1. Afaan Oromoo</string>
+    <string name="for_english"> 3. For English</string>
+    <string name="for_amharic"> 2. For Amharic</string>
+    <string name="ok">OK</string>
+    <string name="next">NEXT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="register"> 1. Register</string>
+    <string name="check_pin"> 2. Check PIN</string>
+    <string name="check_status"> 3. Check Status</string>
+    <string name="city"> 1. City</string>
+    <string name="region"> 2. Region</string>
+    <string name="addis_ababa">1. Addis Ababa</string>
+    <string name="dire_dawa">2. Dire Dawa</string>
+    <string name="mekele">1. Mekele</string>
+    <string name="bahir_dar">4. Bahir Dar</string>
+    <string name="arada">1. Arada</string>
+    <string name="yeka">1. Yeka</string>
+    <string name="bole">3. Bole</string>
+    <string name="lideta">Lideta</string>
+    <string name="wereda1">1. Wereda 01</string>
+    <string name="wereda2">2. Wereda 02</string>
+    <string name="wereda3">3. Wereda 03</string>
+    <string name="wereda4">1. Wereda 04</string>
+    <string name="oromia">4. Oromia</string>
+    <string name="amhara">3. Amhara</string>
+    <string name="afar">2. Afar</string>
+    <string name="tigray">1. Tigray</string>
+    <string name="south_wollo">1. South Wollo</string>
+    <string name="north_wollo">2. North Wollo</string>
+    <string name="north_gondar">3. North Gondar</string>
+    <string name="south_gojjam">4. South Gojjam</string>
+    <string name="wegdi">4. Wegdi</string>
+    <string name="tenta">3. Tenta</string>
+    <string name="akesta">2. Akesta</string>
+    <string name="kelala">1. Kelala</string>
+    <string name="kebele01">1. Kebele 01</string>
+    <string name="kebele02">2. Kebele 02</string>
+    <string name="kebele03">3. Kebele 03</string>
+    <string name="kebele04">4. Kebele 04</string>
 </resources>
