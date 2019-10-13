@@ -3,7 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="afaan_oromoo"> 1. Afaan Oromoo</string>
+    <string name="afaan_oromoo">" 1. For Ormiffa"</string>
     <string name="for_english"> 3. For English</string>
     <string name="for_amharic"> 2. For Amharic</string>
     <string name="ok">OK</string>
@@ -16,16 +16,16 @@
     <string name="region"> 2. Region</string>
     <string name="addis_ababa">1. Addis Ababa</string>
     <string name="dire_dawa">2. Dire Dawa</string>
-    <string name="mekele">1. Mekele</string>
+    <string name="mekele">3. Mekele</string>
     <string name="bahir_dar">4. Bahir Dar</string>
     <string name="arada">1. Arada</string>
-    <string name="yeka">1. Yeka</string>
+    <string name="yeka">2. Yeka</string>
     <string name="bole">3. Bole</string>
-    <string name="lideta">Lideta</string>
+    <string name="lideta">4. Lideta</string>
     <string name="wereda1">1. Wereda 01</string>
     <string name="wereda2">2. Wereda 02</string>
     <string name="wereda3">3. Wereda 03</string>
-    <string name="wereda4">1. Wereda 04</string>
+    <string name="wereda4">4. Wereda 04</string>
     <string name="oromia">4. Oromia</string>
     <string name="amhara">3. Amhara</string>
     <string name="afar">2. Afar</string>
@@ -42,4 +42,5 @@
     <string name="kebele02">2. Kebele 02</string>
     <string name="kebele03">3. Kebele 03</string>
     <string name="kebele04">4. Kebele 04</string>
+    <string name="invalid_input">Invalid Input!</string>
 </resources>

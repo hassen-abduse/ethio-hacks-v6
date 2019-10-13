@@ -4,5 +4,6 @@ class SharedData()
 {
     companion object {
         val oneTimeData = mutableListOf<String>()
+        val statusPin = mutableListOf<String>()
     }
 }

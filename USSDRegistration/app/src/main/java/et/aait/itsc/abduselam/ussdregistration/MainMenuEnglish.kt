@@ -29,13 +29,14 @@ class MainMenuEnglish : DialogFragment() {
 
                     }
                     else if(mainChoice == 2){
-                        val phoneNumberForStatusPinDialog = PhoneNumberForStatusPinDialog()
-                        phoneNumberForStatusPinDialog.show(parentFragmentManager, "phone")
+                        val cityOrRegionForStatusPin = CityOrRegionForStatusPin()
+                        cityOrRegionForStatusPin.show(parentFragmentManager, "city-or-region-status")
+
 
                     }
                     else if(mainChoice == 3) {
-                        val phoneNumberForStatusPinDialog = PhoneNumberForStatusPinDialog()
-                        phoneNumberForStatusPinDialog.show(parentFragmentManager, "phone")
+                        val cityOrRegionForStatusPin = CityOrRegionForStatusPin()
+                        cityOrRegionForStatusPin.show(parentFragmentManager, "city-or-region-status")
 
                     }
                     else {

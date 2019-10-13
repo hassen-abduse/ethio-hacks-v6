@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.RegionalVoter
+import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import kotlinx.android.synthetic.main.dialog_id.view.*
 import kotlinx.android.synthetic.main.dialog_phone.view.*
 import java.lang.IllegalStateException
@@ -25,8 +26,7 @@ class PhoneNumberForStatusPinDialog : DialogFragment() {
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val phone = phoneNumberDialogView.phone_edit_text.text.toString()
-                    //val statusView = LayoutInflater.from(context).inflate(R.layout.dialog_pin_status, null)
-                    //statusView.id_edit_text.text = voter.pin
+                    SharedData.statusPin.add(1, phone)
                     val statusPinDialog = StatusAndPinDialog()
                     statusPinDialog.show(parentFragmentManager, "status and pin")
                 })
