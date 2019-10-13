@@ -1,0 +1,164 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+  
+<!-- Mirrored from getbootstrap.com/docs/4.0/examples/checkout/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 08:45:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Denied</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+    <link th:href="@{/css/jquery.dataTables.min.css}">
+  
+    <link th:href="@{/css/dataTables.min.css}">
+    <link th:href="@{/css/dashboard.css}" rel="stylesheet">
+
+    <link th:href="@{/css/navbar-top.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/form-validation.css}" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">Top navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="Pending.html">Pending </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Verified.html">Verfied</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Denied.html">Denied<span class="sr-only">(current)</span></a>
+                      </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="container">
+
+
+        
+
+
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="">
+        <h2>Denied List</h2>
+        <p class="lead">These are applicants of your assigned district waiting to be Verified.</p>
+      </div>
+
+      <div class="table-responsive" >
+        <table class="table table-striped table-smautoTable" id="tabllle">
+          <thead>
+            <tr>
+              <th>PIN</th>
+              <th>ID Number</th>
+              <th>Phone</th>
+              <th></th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1001</td>
+              <td>12345</td>
+              <td>+251911123456</td>
+              <td>
+                <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" style="background-color:green; color:whitesmoke">Verify</button>
+                </div>
+            </td>
+              
+            </tr>
+            <tr>
+              <td>1002</td>
+              <td>67890</td>
+              <td>+251911153456</td>
+              <td><div class="btn-group" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default" style="background-color:green; color:whitesmoke">Verify</button>
+                  </div></td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 National Electoral Board of Ethiopia</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="jquery-2.1.4.min.js"></script>
+
+	<!-- date-->
+  <link rel="stylesheet" href="jquery-ui.css" />
+  
+  <script src="jquery-ui.js"></script>
+  <script src="dataTables.autoFill.min.js"></script>
+	
+	<!-- //date -->
+
+	<!-- time -->
+  <script src="jquery-3.3.1.js"></script>
+  <script src="jquery.dataTables.min.js"></script>
+
+
+    <script>
+		
+      $(document).ready(function() {
+      $('#tabllle').DataTable();
+      
+  } );
+    </script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+
+<!-- Mirrored from getbootstrap.com/docs/4.0/examples/checkout/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 08:46:00 GMT -->
+</html>

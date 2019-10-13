@@ -1,0 +1,102 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+  
+<!-- Mirrored from getbootstrap.com/docs/4.0/examples/sign-in/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 08:46:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/signin.css}" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal"></h1>
+      <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="firstName" style="float:left">ID Number</label>
+            <input type="text" class="form-control" id="IDNumber" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>  
+          
+      </div>
+	  <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="city" style="float:left">City</label>
+            <input  class="form-control" id="city" list="cities">
+            <datalist id="Citties">
+              <option value="Addis Ababa">
+              <option value="Dire Dawa">
+              <option value="Mek'ele">
+              <option value="Gondar">
+              <option value="Bahir Dar">
+              <option value="Hawassa">
+              <option value="Dessie">
+              <option value="Jimma">
+              <option value="Jijiga">
+              <option value="Shashamane">
+            </datalist> 
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>  
+          
+      </div>
+
+	  
+	  <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="subcity" style="float:left">SubCity</label>
+            <input type="text" class="form-control" id="subCity" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>  
+		      </div>  
+		  <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="woreda" style="float:left">Wereda</label>
+            <input type="text" class="form-control" id="wereda" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>  
+          
+      </div>
+          
+      </div>
+	  
+	   
+		  <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="phoneNumber" style="float:left">PhoneNumber</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required>
+            <div class="invalid-feedback">         
+			</div>
+          </div>  
+          
+      </div>
+          
+      </div>
+	 
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2019 National Electoral Board of Ethiopia</p>
+    </form>
+  </body>
+
+<!-- Mirrored from getbootstrap.com/docs/4.0/examples/sign-in/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 08:46:07 GMT -->
+</html>
