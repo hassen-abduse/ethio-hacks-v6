@@ -5,13 +5,8 @@ import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.widget.EditText
-
 import androidx.fragment.app.DialogFragment
-import et.aait.itsc.abduselam.ussdregistration.R.layout
-import kotlinx.android.synthetic.main.dialog_language.*
 import kotlinx.android.synthetic.main.dialog_language.view.*
-import java.lang.IllegalStateException
 
 class LanguageDialog : DialogFragment() {
 

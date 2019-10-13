@@ -6,9 +6,6 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
-import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.dialog_arada.view.*
-import java.lang.IllegalStateException
 
 class NoNetWorkDialog: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

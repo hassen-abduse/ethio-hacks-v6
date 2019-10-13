@@ -8,8 +8,6 @@ import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import kotlinx.android.synthetic.main.dialog_addis_ababa.view.*
-import kotlinx.android.synthetic.main.dialog_city.view.*
-import java.lang.IllegalStateException
 
 class AddisAbabaDialog: DialogFragment() {
 
@@ -26,7 +24,7 @@ class AddisAbabaDialog: DialogFragment() {
 
                     val subCity = addisAbabaView.sub_city_edit_text.text.toString().toInt()
                     if(subCity == 1) {
-                        SharedData.oneTimeData.add(2, R.string.arada.toString())
+                        SharedData.oneTimeData.add(2, getString(R.string.arada).substring(2))
                         val aradaDialog = AradaDialog()
                         aradaDialog.show(parentFragmentManager, "arada")
 

@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">USSD Registration</string>
+    <string name="app_name">Phone</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="afaan_oromoo">" 1. For Ormiffa"</string>
+    <string name="afaan_oromoo">"1. For Ormiffa"</string>
     <string name="for_english"> 3. For English</string>
     <string name="for_amharic"> 2. For Amharic</string>
     <string name="ok">OK</string>

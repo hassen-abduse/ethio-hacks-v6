@@ -8,8 +8,6 @@ import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import kotlinx.android.synthetic.main.dialog_id.view.*
-import kotlinx.android.synthetic.main.english_main_menu.view.*
-import java.lang.IllegalStateException
 
 class IdDialog: DialogFragment() {
 

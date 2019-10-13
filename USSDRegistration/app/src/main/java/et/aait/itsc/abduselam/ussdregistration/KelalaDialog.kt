@@ -8,8 +8,6 @@ import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import kotlinx.android.synthetic.main.dialog_kelala.view.*
-import kotlinx.android.synthetic.main.english_main_menu.view.*
-import java.lang.IllegalStateException
 
 class KelalaDialog: DialogFragment() {
 
@@ -26,7 +24,7 @@ class KelalaDialog: DialogFragment() {
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val kebele = kelalaDialogView.kebele_edit_text.text.toString().toInt()
-                    SharedData.oneTimeData.add(4, R.string.kebele01.toString())
+                    SharedData.oneTimeData.add(4, getString(R.string.kebele01).substring(2))
                     if (kebele == 1){
                         val phoneNumberDialog = PhoneNumberDialog()
                         phoneNumberDialog.show(parentFragmentManager, "phone")

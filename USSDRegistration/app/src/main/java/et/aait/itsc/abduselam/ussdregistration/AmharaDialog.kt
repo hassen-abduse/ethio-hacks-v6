@@ -8,8 +8,6 @@ import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import kotlinx.android.synthetic.main.dialog_amhara.view.*
-import kotlinx.android.synthetic.main.dialog_region.view.*
-import java.lang.IllegalStateException
 
 class AmharaDialog: DialogFragment() {
 
@@ -25,7 +23,7 @@ class AmharaDialog: DialogFragment() {
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val region = amharaDialogView.zone_edit_text.text.toString().toInt()
-                    SharedData.oneTimeData.add(2, R.string.south_wollo.toString())
+                    SharedData.oneTimeData.add(2, getString(R.string.south_wollo).substring(2))
                     if(region == 3) {
                         val southWolloDialog = SouthWolloDialog()
                         southWolloDialog.show(parentFragmentManager, "south-wollo")

@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.dialog_region.view.*
 import kotlinx.android.synthetic.main.dialog_south_wollo.view.*
-import java.lang.IllegalStateException
 
 class SouthWolloDialog: DialogFragment(){
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -24,7 +22,7 @@ class SouthWolloDialog: DialogFragment(){
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val wereda = southWolloDialogView.wereda_edit_text.text.toString().toInt()
-                    SharedData.oneTimeData.add(3, R.string.kelala.toString())
+                    SharedData.oneTimeData.add(3, getString(R.string.kelala).substring(2))
                     if(wereda == 3) {
                         val kelalaDialog = KelalaDialog()
                         kelalaDialog.show(parentFragmentManager, "kelala")

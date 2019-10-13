@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.city_or_region.view.*
 import kotlinx.android.synthetic.main.dialog_city.view.*
-import java.lang.IllegalStateException
 
 class CityDialog: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -25,7 +23,7 @@ class CityDialog: DialogFragment() {
 
                     val city = cityView.city_edit_text.text.toString().toInt()
                     if(city == 1) {
-                        SharedData.oneTimeData.add(1, R.string.addis_ababa.toString())
+                        SharedData.oneTimeData.add(1, getString(R.string.addis_ababa).substring(2))
                         val addisAbabaDialog = AddisAbabaDialog()
                         addisAbabaDialog.show(parentFragmentManager, "addis ababa")
 

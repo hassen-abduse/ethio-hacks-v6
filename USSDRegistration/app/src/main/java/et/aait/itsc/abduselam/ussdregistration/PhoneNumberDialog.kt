@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.dialog_id.view.*
 import kotlinx.android.synthetic.main.dialog_phone.view.*
-import java.lang.IllegalStateException
 
 class PhoneNumberDialog: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

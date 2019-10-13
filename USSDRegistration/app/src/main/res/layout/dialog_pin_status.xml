@@ -10,7 +10,7 @@
         android:id="@+id/pin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your PIN is 401666"
+        android:text="Your PIN is ..."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
@@ -19,7 +19,7 @@
         android:id="@+id/status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Status is ACCEPTED"
+        android:text="Your Status is ..."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>

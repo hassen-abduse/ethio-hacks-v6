@@ -2,14 +2,10 @@ package et.aait.itsc.abduselam.ussdregistration
 
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.Context
 import android.content.DialogInterface
-import android.net.ConnectivityManager
-import android.net.NetworkInfo
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProviders
 import et.aait.itsc.abduselam.ussdregistration.data.CityVoter
@@ -17,10 +13,7 @@ import et.aait.itsc.abduselam.ussdregistration.data.RegionalVoter
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import et.aait.itsc.abduselam.ussdregistration.viewmodel.CityVoterViewModel
 import et.aait.itsc.abduselam.ussdregistration.viewmodel.RegionalVoterViewModel
-import kotlinx.android.synthetic.main.dialog_city.view.*
-import kotlinx.android.synthetic.main.dialog_south_wollo.view.*
 import kotlinx.android.synthetic.main.dialog_success.view.*
-import java.lang.IllegalStateException
 import kotlin.random.Random
 
 class SuccessDialog: DialogFragment() {
@@ -35,25 +28,41 @@ class SuccessDialog: DialogFragment() {
 
             val pin = Random.nextLong()
             val data = SharedData.oneTimeData
+//            Log.e("City or  Region", SharedData.oneTimeData[0])
+//            Log.e("City", SharedData.oneTimeData[1])
+//            Log.e("Sub City", SharedData.oneTimeData[2])
+//            Log.e("Wereda", SharedData.oneTimeData[3])
+//            Log.e("kebele", SharedData.oneTimeData[4])
+//            Log.e("phone Number", SharedData.oneTimeData[5])
+//            Log.e("Kebele ID", SharedData.oneTimeData[6])
             if(SharedData.oneTimeData[0] == "City") {
 
-                val cityVoter = CityVoter(data[1],data[2], data[3], data[4], data[5], pin, "Pending")
+                val cityVoter = CityVoter(data[1],data[2], data[3], data[4], data[5], pin, "PENDING")
+                Log.e("City or  Region", SharedData.oneTimeData[0])
+                Log.e("City", cityVoter.city)
+                Log.e("Sub City", cityVoter.subCity)
+                Log.e("Wereda", cityVoter.wereda)
+                Log.e("wereda ID", cityVoter.weredaID)
+                Log.e("phone Number", cityVoter.phoneNumber)
+                Log.e("status", cityVoter.status)
+
                 cityVoterViewModel.insertCityVoter(cityVoter)
                 cityVoterViewModel.insertResponse.observe(this, androidx.lifecycle.Observer {
                     response -> response.body()?.run {
-                    successDialogView.pin.text = cityVoter.voterPIN.toString()
+                    successDialogView.pin.text =  this.voterPIN.toString()
                 }
                 })
 
             }
+
             else {
 
-                val regionalVoter = RegionalVoter(data[1],data[2], data[3], data[4], data[5], data[6], pin, "Pending")
-               regionalVoterViewModel.insertRegionalVoter(regionalVoter)
+                val regionalVoter = RegionalVoter(data[1],data[2], data[3], data[4], data[5], data[6], pin, "PENDING")
+                regionalVoterViewModel.insertRegionalVoter(regionalVoter)
                 regionalVoterViewModel.insertResponse.observe(this, androidx.lifecycle.Observer {
-                        response -> response.body()?.run {
-                    successDialogView.pin.text = regionalVoter.voterPIN.toString()
-                }
+
+                    successDialogView.pin.text = it.body()?.voterPIN.toString()
+
                 })}
 
             builder.setView(successDialogView)

@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.dialog_addis_ababa.view.*
 import kotlinx.android.synthetic.main.dialog_arada.view.*
-import java.lang.IllegalStateException
 
 class AradaDialog: DialogFragment() {
 
@@ -25,7 +23,7 @@ class AradaDialog: DialogFragment() {
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val wereda = aradaview.wereda_edit_text.text.toString().toInt()
-                    SharedData.oneTimeData.add(3, R.string.wereda1.toString())
+                    SharedData.oneTimeData.add(3, getString(R.string.wereda1).substring(2))
                     val phoneNumberDialog = PhoneNumberDialog()
                     phoneNumberDialog.show(parentFragmentManager, "id")
                     //SharedData.oneTimeData.add(3, R.string.wereda1.toString())

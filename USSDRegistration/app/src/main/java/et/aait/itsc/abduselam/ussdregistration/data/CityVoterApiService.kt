@@ -24,7 +24,7 @@ interface CityVoterApiService {
 
     companion object {
 
-        private val baseUrl = "https://localhost:9090/"
+        private val baseUrl = "http://192.168.43.11:8080/"
 
         fun getInstance(): CityVoterApiService {
 

@@ -8,13 +8,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProviders
-import et.aait.itsc.abduselam.ussdregistration.data.RegionalVoter
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
 import et.aait.itsc.abduselam.ussdregistration.viewmodel.CityVoterViewModel
 import et.aait.itsc.abduselam.ussdregistration.viewmodel.RegionalVoterViewModel
-import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.dialog_pin_status.view.*
 import kotlinx.android.synthetic.main.dialog_success.view.*
-import java.lang.IllegalStateException
+import kotlinx.android.synthetic.main.dialog_success.view.pin
 
 class StatusAndPinDialog: DialogFragment() {
 
@@ -29,7 +28,8 @@ class StatusAndPinDialog: DialogFragment() {
                 regionalVoterViewModel.getRegionalVoterByPhoneNumber(SharedData.statusPin[1])
                 regionalVoterViewModel.getResponse.observe(this, androidx.lifecycle.Observer {
                         response -> response.body()?.run {
-                    statusPinDialogView.pin.text = this.voterPIN.toString()
+                    statusPinDialogView.pin.text = "Yout PIN: " + this.voterPIN.toString()
+                    statusPinDialogView.status.text = "Your Status: " +  this.status
                 }
                 })
 
@@ -39,7 +39,8 @@ class StatusAndPinDialog: DialogFragment() {
                 cityVoterViewModel.getCityVoterByPhoneNumber(SharedData.statusPin[1])
                 cityVoterViewModel.getResponse.observe(this, androidx.lifecycle.Observer {
                         response -> response.body()?.run {
-                    statusPinDialogView.pin.text = this.voterPIN.toString()
+                    statusPinDialogView.pin.text = "Yout PIN: " + this.voterPIN.toString()
+                    statusPinDialogView.status.text = "Your Status: " +  this.status
                 }
                 })
 
@@ -47,7 +48,7 @@ class StatusAndPinDialog: DialogFragment() {
             builder.setView(statusPinDialogView)
 
                 .setTitle("Your Info!")
-                .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
+                .setPositiveButton(R.string.ok, DialogInterface.OnClickListener{ dialog, id ->
                     dismiss()
 
                 })

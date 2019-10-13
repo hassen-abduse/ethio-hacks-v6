@@ -7,10 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.city_or_region.view.*
-import kotlinx.android.synthetic.main.english_main_menu.view.*
-import java.lang.IllegalStateException
 
 class CityOrRegionDialog: DialogFragment() {
 
