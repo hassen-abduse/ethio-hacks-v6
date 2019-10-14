@@ -25,7 +25,7 @@ interface RegionalVoterApiService {
 
     companion object {
 
-        private val baseUrl = "http://192.168.43.11:8080/"
+        private val baseUrl = "http://192.168.43.15:8080/"
 
         fun getInstance(): RegionalVoterApiService {
 

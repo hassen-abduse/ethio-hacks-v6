@@ -49,7 +49,9 @@ class SuccessDialog: DialogFragment() {
                 cityVoterViewModel.insertCityVoter(cityVoter)
                 cityVoterViewModel.insertResponse.observe(this, androidx.lifecycle.Observer {
                     response -> response.body()?.run {
-                    successDialogView.pin.text =  this.voterPIN.toString()
+
+                    successDialogView.pin.text = "Succesfully Registerd!"
+
                 }
                 })
 
@@ -58,10 +60,18 @@ class SuccessDialog: DialogFragment() {
             else {
 
                 val regionalVoter = RegionalVoter(data[1],data[2], data[3], data[4], data[5], data[6], pin, "PENDING")
+                Log.e("City or  Region", SharedData.oneTimeData[0])
+                Log.e("Region", regionalVoter.region)
+                Log.e("Zone", regionalVoter.zone)
+                Log.e("Wereda", regionalVoter.wereda)
+                Log.e("kebele", regionalVoter.kebele)
+                Log.e("kebeleID", regionalVoter.kebeleID)
+                Log.e("phone Number", regionalVoter.phoneNumber)
+                Log.e("status", regionalVoter.status)
                 regionalVoterViewModel.insertRegionalVoter(regionalVoter)
                 regionalVoterViewModel.insertResponse.observe(this, androidx.lifecycle.Observer {
 
-                    successDialogView.pin.text = it.body()?.voterPIN.toString()
+                    successDialogView.pin.text = "Succesfully Registerd!"
 
                 })}
 

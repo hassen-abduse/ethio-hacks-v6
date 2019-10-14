@@ -20,7 +20,7 @@ class RegionDialog : DialogFragment() {
 
             builder.setView(regionDialogView)
 
-                .setTitle("Please Select your Region")
+                .setTitle(R.string.please_select_your_region)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val region = regionDialogView.region_edit_text.text.toString().toInt()

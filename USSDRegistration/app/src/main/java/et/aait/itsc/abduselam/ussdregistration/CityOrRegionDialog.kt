@@ -19,7 +19,7 @@ class CityOrRegionDialog: DialogFragment() {
 
             builder.setView(cityOrRegionView)
 
-                .setTitle("City or Region?")
+                .setTitle(R.string.city_or_region)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val cityOrRegion = cityOrRegionView.city_or_region_edit_text.text.toString().toInt()

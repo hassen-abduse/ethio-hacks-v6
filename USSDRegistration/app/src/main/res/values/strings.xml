@@ -43,4 +43,14 @@
     <string name="kebele03">3. Kebele 03</string>
     <string name="kebele04">4. Kebele 04</string>
     <string name="invalid_input">Invalid Input!</string>
+    <string name="please_enter_your_sub_city">Please Select Your Sub City</string>
+    <string name="please_select_your_zone">Please Select Your Zone</string>
+    <string name="please_select_your_wereda">Please Select Your Wereda</string>
+    <string name="please_select_your_city">Please Select Your City</string>
+    <string name="city_or_region">City or Region</string>
+    <string name="please_enter_your_id">Please Enter Your ID</string>
+    <string name="please_select_your_kebele" >Please select your Kebele</string>>
+    <string name="please_select_your_language" >Please Select Your Language</string>
+    <string name="please_choose_what_to_do">Please Choose What to do</string>
+    <string name="please_select_your_region">Please Select Your Region</string>
 </resources>

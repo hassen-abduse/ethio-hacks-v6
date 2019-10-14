@@ -18,7 +18,7 @@ class SouthWolloDialog: DialogFragment(){
 
             builder.setView(southWolloDialogView)
 
-                .setTitle("Please Select your Region")
+                .setTitle(R.string.please_select_your_wereda)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val wereda = southWolloDialogView.wereda_edit_text.text.toString().toInt()

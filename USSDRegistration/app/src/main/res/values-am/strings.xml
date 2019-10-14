@@ -40,4 +40,14 @@
     <string name="ok">"እሽ "</string>
     <string name="north_gondar"> 3. ሰሜን ጎንደር</string>
     <string name="north_wollo"> 2. ሰሜን ወሎ</string>
+    <string name="please_choose_what_to_do">እባክዎ ይምረጡ</string>
+    <string name="please_enter_your_id">እባክዎ መታወቂያ ቁጥር ያስገቡ</string>
+    <string name="please_enter_your_sub_city">እባክዎ ክፍለ ከተማ ይምረጡ</string>
+    <string name="please_select_your_city">እባክዎ ከተማ ይምረጡ</string>
+    <string name="please_select_your_kebele">እባክዎ ቀበሌ ይምረጡ</string>
+    <string name="please_select_your_language">እባክዎ ቋንቋ ይምረጡ</string>
+    <string name="please_select_your_region">እባክዎ ክልል ይምረጡ</string>
+    <string name="please_select_your_wereda">እባክዎ ወረዳ ይምረጡ</string>
+    <string name="please_select_your_zone">እባክዎ  ዞን  ይምረጡ</string>
+    <string name="city_or_region">ከተማ / ክልል</string>
 </resources>

@@ -19,7 +19,7 @@ class IdDialog: DialogFragment() {
 
             builder.setView(idDialogView)
 
-                .setTitle("Please Enter your ID")
+                .setTitle(R.string.please_enter_your_id)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val id = idDialogView.id_edit_text.text.toString()

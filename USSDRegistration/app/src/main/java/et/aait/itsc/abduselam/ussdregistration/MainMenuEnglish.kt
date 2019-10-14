@@ -19,7 +19,7 @@ class MainMenuEnglish : DialogFragment() {
 
                 builder.setView(mainDialogView)
 
-                .setTitle("Choose what to do")
+                .setTitle(R.string.please_choose_what_to_do)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val mainChoice = mainDialogView.main_edit_text.text.toString().toInt()

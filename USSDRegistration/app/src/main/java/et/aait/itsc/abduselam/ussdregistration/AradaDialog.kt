@@ -1,9 +1,12 @@
 package et.aait.itsc.abduselam.ussdregistration
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.Context
 import android.content.DialogInterface
 import android.os.Bundle
+import android.telephony.TelephonyManager
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import et.aait.itsc.abduselam.ussdregistration.data.SharedData
@@ -11,6 +14,7 @@ import kotlinx.android.synthetic.main.dialog_arada.view.*
 
 class AradaDialog: DialogFragment() {
 
+    @SuppressLint("MissingPermission")
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return activity?.let {
             val builder = AlertDialog.Builder(it)
@@ -19,14 +23,22 @@ class AradaDialog: DialogFragment() {
 
             builder.setView(aradaview)
 
-                .setTitle("Please Select your Wereda")
+                .setTitle(R.string.please_select_your_wereda)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val wereda = aradaview.wereda_edit_text.text.toString().toInt()
                     SharedData.oneTimeData.add(3, getString(R.string.wereda1).substring(2))
-                    val phoneNumberDialog = PhoneNumberDialog()
-                    phoneNumberDialog.show(parentFragmentManager, "id")
-                    //SharedData.oneTimeData.add(3, R.string.wereda1.toString())
+                    val telephonyManager = getActivity()?.getSystemService(
+                        Context.TELEPHONY_SERVICE) as TelephonyManager
+                    val strMobileNumber = telephonyManager.line1Number
+                    if(strMobileNumber != null && strMobileNumber != ""){
+
+                        SharedData.oneTimeData.add(4, strMobileNumber)}
+                    else {
+                        SharedData.oneTimeData.add(4, "+251943869199")
+                    }
+                    val idDialog = IdDialog()
+                    idDialog.show(parentFragmentManager, "id")
                 })
 
                 .setNegativeButton(R.string.cancel, DialogInterface.OnClickListener{ dialog, id ->

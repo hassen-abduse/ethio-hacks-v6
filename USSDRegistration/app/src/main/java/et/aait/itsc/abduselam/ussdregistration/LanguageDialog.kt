@@ -18,7 +18,7 @@ class LanguageDialog : DialogFragment() {
 
             builder.setView(languageDialogView)
 
-                .setTitle("Select Your Language")
+                .setTitle(R.string.please_select_your_language)
 
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 

@@ -19,7 +19,7 @@ class AmharaDialog: DialogFragment() {
 
             builder.setView(amharaDialogView)
 
-                .setTitle("Please Select your Zone")
+                .setTitle(R.string.please_select_your_zone)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val region = amharaDialogView.zone_edit_text.text.toString().toInt()

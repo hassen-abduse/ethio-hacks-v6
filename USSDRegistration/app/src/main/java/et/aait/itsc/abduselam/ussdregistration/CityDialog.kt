@@ -18,7 +18,7 @@ class CityDialog: DialogFragment() {
 
             builder.setView(cityView)
 
-                .setTitle("Please Select your City")
+                .setTitle(R.string.please_select_your_city)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val city = cityView.city_edit_text.text.toString().toInt()
@@ -31,7 +31,7 @@ class CityDialog: DialogFragment() {
                     }
                     else if(city == 2){
                         SharedData.oneTimeData.add(1, R.string.dire_dawa.toString())
-                        val direDawaDialog = DireDawaDialog()
+                        val direDawaDialog = AddisAbabaDialog()
                         direDawaDialog.show(parentFragmentManager, "dire dawa")
 
 

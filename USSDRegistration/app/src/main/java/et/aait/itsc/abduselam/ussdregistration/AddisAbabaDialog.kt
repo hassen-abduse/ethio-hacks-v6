@@ -19,7 +19,7 @@ class AddisAbabaDialog: DialogFragment() {
 
             builder.setView(addisAbabaView)
 
-                .setTitle("Please Select your Sub City")
+                .setTitle(R.string.please_enter_your_sub_city)
                 .setPositiveButton(R.string.next, DialogInterface.OnClickListener{ dialog, id ->
 
                     val subCity = addisAbabaView.sub_city_edit_text.text.toString().toInt()
